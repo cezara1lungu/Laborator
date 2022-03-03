@@ -1,0 +1,104 @@
+/*  ---------- section ----------- */
+section{
+  width: 100%;
+  height: 300vh;   
+  background-image: url(../img/index_home/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noutati{
+  width: 90%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.noutati h1{
+  margin-right: 68%; 
+  font-size: 28px;
+  margin-bottom: -2%;
+}
+.noutati .bloc_n{
+  width: 95%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+}
+
+.noutati .bloc_n .foto{
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  margin-right:  5%;
+}
+
+.noutati .bloc_n .descriere{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5F9299;
+  border-radius: 30px;
+  padding: 1%;
+
+}
+
+.s_noutati{
+  width: 100%;
+  height: 16%;
+  background-color: #3F3E44;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.s_noutati .foto{
+  width: 20%;
+  height: 95%;
+  background-color: transparent;
+  margin-right: 1%;
+  background-image: url(../img/index_home/samsung_galaxy_a505_black.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s_noutati .descriere{
+  width: 30%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  color: white
+}
+
+.date_noutati{
+  width: 90%;
+  height: 35%;
+  background-color: rgba(139, 205, 174, 0.2);
+  margin-top: 2%;
+  border-radius: 30px;
+  border: 1px solid rgba(139, 205, 174, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2% 3% 1% 5%;
+
+}
+.date_noutati p{
+  text-align: left;
+  font-size: 15px;
+  
+  font-family: 'Montserrat', sans-serif;
+}
+.date_noutati ul{
+  padding: 0 0 0 50px;
+  list-style-type: disc;
+}

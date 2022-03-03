@@ -1,0 +1,269 @@
+/* Acest fișier este comun pentru toate paginile html */
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+  }
+  .header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    width: 100%;
+    height: 10vh;
+    border: 1px solid #a2a2a2;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  h2,
+  h3,
+  a {
+    font-size: 15px;
+    color: #34495e;
+  }
+  a {
+    text-decoration: none;
+  }
+  .contacte{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .main-nav {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav a {
+    padding: 10px 6px;
+    text-align: center;
+  }
+  .main-nav a {
+    color: #34495e;
+    font-size: 20px;
+  }
+  .main-nav a:hover {
+    color: #718daa;
+  }
+  .tm-stroke-svg {
+      fill: none;
+      stroke: #000;
+  }
+  .log{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: 
+  }
+   .log img{
+     margin-left: -25%;
+   }
+
+  /*  Final Media Queries */
+
+  /*  Bar nav. nivel2 */
+  .util{
+    background-color: #2B2525;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+   }
+
+.categorii{
+  background-color: #3A3939;   
+  width: 12%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.categorii h3{ 
+color: white;
+margin-left: 30%;
+}
+.categorii a i:hover{
+   color: blue;
+   cursor: pointer; 
+}
+
+.personal{
+  width: 20%;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; 
+}
+.personal img{
+  margin: 2px 2px;
+}
+
+/*  ---------- Search ----------- */
+
+* {
+    box-sizing: border-box;
+  }
+  .example{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+  }
+   /* input */
+   .cautare{
+    width: 60%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   }
+  
+  .example input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid grey;
+    width: 80%;
+  }
+  
+  .example button {
+    float: right;
+    width: 20%;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  .cat_b {
+    width: 12%;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #9e9e9e;
+    margin-top: 8vh;
+    margin-left: 4%;
+    visibility: hidden;
+  }
+ 
+
+   /*----------------- Footer -------------------*/
+   .footer{
+    width: 100%;
+    height: 35vh;
+    background-color: #464242;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  footer .footer p b{
+    color: white;
+  }
+  footer .footer p{
+    padding-left: 80px;
+  }
+  footer .footer p a{
+    color: black;
+  }
+  footer .footer p a:hover{
+    color:#418a6a
+  }
+  
+  /*----------------- Copyright -------------------*/
+  .copyright{
+    width: 100%;
+    height: 8vh;  
+    position: absolute;
+    background-color: #2B2525;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*  Pentru versiunea mobila */
+  @media (max-width: 769px) {
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .header .main{
+      width: 50%;
+    }
+
+    .main-nav a{
+      font-size: 12px;
+    }
+   .main-nav path{
+      font-size: 12px;
+   }
+  
+    .header .contacte{
+      width: 25%;
+    }
+
+    .header .contacte a{
+      font-size: 12px;
+    }
+
+    .log{
+      width: 20%;
+    }
+    .log img{
+      height: 4vh;
+    }
+    
+    .exemple{
+      width: 20%;
+    }
+    
+    .categorii{
+      width: 30%;
+    }
+
+    .footer{
+width: 100%;
+height: 75vh;
+display: flex;
+flex-wrap: wrap;
+}
+
+  }

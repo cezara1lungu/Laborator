@@ -1,0 +1,199 @@
+/*  ---------- section ----------- */
+section{
+  width: 100%;
+  height: 150vh;   
+  background-image: url(../img/index_home/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+.contact{
+  width: 89%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3%;
+  background-color: rgba(139, 205, 174, 0.2);
+  margin-top: 2%;
+  border-radius: 30px;
+  border: 1px solid rgba(139, 205, 174, 0.9);
+}
+
+.contact h1{
+  margin-right: 68%; 
+  font-size: 28px;
+  margin-bottom: -2%;
+}
+.contact .bloc_n{
+  width: 85%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  margin: 4%;
+}
+
+.contact .bloc_n .mag{
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  margin-right: 5%;
+}
+
+.contact .bloc_n .client{
+  width: 46%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  background-color: white;
+  margin: 0;
+}
+
+.contacts_list .item__title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px 16px;
+    background-color: #6663c0;
+}
+.contacts_list .item__body .col {
+    padding: 15px 20px;
+}
+.contacts_list .item__body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+.contacts_list .item__body ul li {
+    margin-bottom: 5px;
+    padding-left: 1.5em;
+    color: #2F333A;
+}
+.contacts_list .item__body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+.contacts_list .item__body .schedule__title {
+    color: #2F333A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px; 
+}
+.contacts_list .item__body ul li .fa {
+    width: 1.5em;
+    text-align: center;
+    color: #97a4ba;
+}
+.contacts_list .item__body .col {
+    padding: 15px;
+    flex: none;}
+    .col {
+    margin: 0;
+    padding: 0 12px;
+    min-width: 0;
+    max-width: 100%;
+    display: inline-block;
+}
+
+/*  Pentru versiunea mobila */
+
+    @media (max-width: 769px) {
+      .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .header .main{
+        width: 50%;
+      }
+
+      .main-nav a{
+        font-size: 12px;
+      }
+     .main-nav path{
+        font-size: 12px;
+     }
+    
+      .header .contacte{
+        width: 25%;
+      }
+
+      .header .contacte a{
+        font-size: 12px;
+      }
+
+      .log{
+        width: 20%;
+      }
+      .log img{
+        height: 4vh;
+      }
+      
+      .exemple{
+        width: 20%;
+      }
+      
+      .categorii{
+        width: 30%;
+      }
+ .contact .bloc_n .mag {
+        height: 60vh;
+    }
+    .contact .bloc_n .client{
+       height: 60vh;
+      }
+    }
+  @media only screen and (max-width: 800px){
+   .contacts_list .item__body {
+    display: block;
+    }
+    .contact .bloc_n .mag {
+        height: 60vh;
+    }
+    .contact .bloc_n .client{
+       height: 60vh;
+      }}
+      @media only screen and (max-width: 1460px){
+.contacts_list .item__body ul {
+    font-size: 13px;
+}
+
+ }
+.contacts_list .item__body .schedule__title {
+    color: #2F333A;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 640px){
+.contacts_list .item__title {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+ .contact .bloc_n .mag {
+        height: 60vh;
+    }
+    .contact .bloc_n .client{
+       height: 60vh;
+      }
+
+      .footer{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+    }
