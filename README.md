@@ -1,2 +1,2 @@
 # Laborator
-Lucrările de laborator pentru disciplina Tehnologii web
+Lucrarea de laborator nr. 1
