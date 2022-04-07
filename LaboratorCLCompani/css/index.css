@@ -97,7 +97,7 @@ body, html {
    }
 
 .categorii{
-  background-color: #3A3939;   
+  background-color: #3A3939; 
   width: 12%;
   height: 8vh;
   display: flex;
@@ -107,11 +107,13 @@ body, html {
   cursor: pointer;
 }
 .categorii h3{ 
-color: white;
-margin-left: 30%;
+  color: white;
+  margin-left: 30%;
+  font-weight: bold;
+  padding: 5px;  
 }
-.categorii a i:hover{
-   color: blue;
+.categorii :hover{
+   color: 418a6a;
    cursor: pointer; 
 }
 
@@ -165,7 +167,7 @@ margin-left: 30%;
     cursor: pointer;
   }
 
-  .cat_b {
+  .cat_b{
     width: 12%;
     height: 13vh;
     display: flex;
@@ -175,8 +177,26 @@ margin-left: 30%;
     margin-top: 8vh;
     margin-left: 4%;
     visibility: hidden;
+    padding: 5px;
   }
- 
+  .cat_b a{
+    color:#fff;
+  }
+
+  .cat_b a:hover{
+    font-weight: bold;
+  }
+
+  .btnt{
+    width: 140px;
+    height: 8vh;
+    background-color: #418a6a;
+    color: #000;
+  }
+  .btnt:hover{
+    background-color: #418a7a;
+    font-weight: bold;
+  }
 
    /*----------------- Footer -------------------*/
    .footer{
@@ -199,7 +219,7 @@ margin-left: 30%;
     color: black;
   }
   footer .footer p a:hover{
-    color:#418a6a
+    color:#418a6a;
   }
   
   /*----------------- Copyright -------------------*/

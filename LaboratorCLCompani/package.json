@@ -1,0 +1,14 @@
+{
+  "name": "laboratorclcompani",
+  "version": "1.0.0",
+  "description": "",
+  "main": "smartphones.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CL",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  }
+}

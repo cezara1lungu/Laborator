@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/tablete.css">
+  <script src="../json/tablets.js"></script>
 </head>
 <body>
   <div class="home" >
@@ -80,11 +81,12 @@
         <div class="site-header"></div>
         <h1>Tablete</h1>
         <hr width="70%">
-
+    
         <button id="sort-asc">Preț (mic>mare)</button>
         <button id="sort-desc">Preț (mare>mic)</button>
-        <button id="sort-rating">Cele mai populare</button>
-
+        <button id="sort-rating">Cele mai populare</button>   
+  </div>
+  
         <div class="clearfix"></div>
         <hr width="30%">
         <div class="goods-wrap">
@@ -93,57 +95,58 @@
                 <img src="../img/ipad/iPad_pro2020.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">iPad Pro 12,9″ 128 Gb</h1>
                 <p>Preț: <span class="item_price">17 990</span>Lei</p>
-                <button class="add_item" data-id="16">Pune în coș</button>
+                <button class="btnt addToBin" data-id="">Pune în coș</button>
             </div>
-
+            
             <div class="item_box">
                 <img src="../img/ipad/ipad_gold.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">APPLE iPad 10.2 Wi-Fi +Cellular 128GB Gold</h1>
                 <p>Preț: <span class="item_price">2 799</span>Lei</p>
-                <button class="add_item" data-id="9">Pune în coș</button>
+                <button class="btnt">Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/ipad/ipad_pro_11_grey.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">Apple iPad Pro 11 256Gb 4G Grey</h1>
                <p>Preț: <span class="item_price">6 119</span>Lei</p>
-                <button class="add_item" data-id="10">Pune în coș</button>
+                <button class="btnt">Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/lenovo/lenovo_za490034.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">LENOVO Idea Tab M10 FHD 3GB 32GB 4G Black</h1>
                 <p>Preț: <span class="item_price">2 899</span>Lei</p>
-                <button class="add_item" data-id="11">Pune în coș</button>
+                <button class="btnt">Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/lenovo/lenovo_tab.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">LENOVO Tab M8 2 GB 32GB 4G Grey</h1>
                 <p>Preț: <span class="item_price">2 699</span>Lei</p>
-                <button class="add_item" data-id="12">Pune în coș</button>
+                <button class="btnt">Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/lenovo/lenovo1.jpg" alt="" width="190px" height="189px">
                 <h1 class="item_title">LENOVO IdeaTab M7 16Gb Grey</h1>
                 <p>Preț: <span class="item_price">2 599</span>Lei</p>
-                <button class="add_item" data-id="13">Pune în coș</button>
+                <button class="btnt" >Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/apple/apple_ipad_silver.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">Apple iPad 10.2 (2019) WiFi 32GB, Silver</h1>
                 <p>Preț: <span class="item_price">5 300</span>Lei</p>
-               <button class="add_item">Pune în coș</button>
+               <button class="btnt add_item">Pune în coș</button>
             </div>
 
             <div class="item_box">
                 <img src="../img/ipad/ipad-pro-12.jpg" alt="" width="190px" height="185px">
                 <h1 class="item_title">  iPad Pro 11 2020 </h1>
                 <p>Preț: <span class="item_price">16 990</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
+                <button class="btnt">Pune în coș</button>
             </div>
+            
         </div>
         <div class="clearfix"></div>
     </div>
@@ -182,5 +185,6 @@
             <p>Copyright © 2022</p>
         </div>
         <script type="text/javascript" src="../javascript/categorii.js"></script>
+        <script src="../javascript/tablete-cards.js"></script>
 </body>
 </html>

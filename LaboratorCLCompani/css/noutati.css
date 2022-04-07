@@ -15,15 +15,14 @@ section{
   height: 45%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 2%;
 }
 
 .noutati h1{
-  margin-right: 68%; 
-  font-size: 28px;
-  margin-bottom: -2%;
+  align-items: center;
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 30px;
 }
 .noutati .bloc_n{
   width: 95%;
@@ -42,14 +41,14 @@ section{
 
 .noutati .bloc_n .descriere{
   width: 65%;
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #5F9299;
-  border-radius: 30px;
-  padding: 1%;
-
+  background-color: rgba(139, 205, 174, 0.2);
+  border: 1px solid rgba(139, 205, 174, 0.9);
+  border-radius: 25px;
+  padding: 3px 2px 3px 2px;
 }
 
 .s_noutati{
@@ -73,10 +72,14 @@ section{
 
 .s_noutati .descriere{
   width: 30%;
-  height: 95%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  color: white
+  color: white;
+}
+.descriere .title{
+  color: #c9caca;
+  font-size: 18px;
 }
 
 .date_noutati{
@@ -90,12 +93,10 @@ section{
   flex-direction: column;
   align-items: flex-start;
   padding: 2% 3% 1% 5%;
-
 }
 .date_noutati p{
   text-align: left;
   font-size: 15px;
-  
   font-family: 'Montserrat', sans-serif;
 }
 .date_noutati ul{

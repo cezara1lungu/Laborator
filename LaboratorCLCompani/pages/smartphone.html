@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-	<link rel="stylesheet" type="text/css" href="../css/smartphones.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" type="text/css" href="../css/smartphones.css">
+  <script type="text/javascript" src="../json/smartphon.js"></script>
 </head>
 <body>
 	<div class="home" >
@@ -22,8 +23,6 @@
                 Credit
               </a>
             </li>
-
-
             <li>
               <a href="../pages/livrare.html">
                 <svg viewBox="0 0 30 30" style="width: 24px; height: 24px; margin-top: -1px;">
@@ -80,76 +79,76 @@
 
 <!-- Incep conținut pagina -->
 <section>
-	    <div class="container">
-        <div class="site-header"></div>
-        <h1>Smartphone-uri</h1>
-        <hr width="70%">
+  <div class="container">
+      <div class="site-header"></div>
+      <h1>Smartphone-uri</h1>
+      <hr width="70%">
 
-        <button id="sort-asc">Preț (mic>mare)</button>
-        <button id="sort-desc">Preț (mare>mic)</button>
-        <button id="sort-rating">Cele mai populare</button>
+      <button id="sort-asc">Preț (mic>mare)</button>
+      <button id="sort-desc">Preț (mare>mic)</button>
+      <button id="sort-rating">Cele mai populare</button>
 
-        <div class="clearfix"></div>
-        <hr width="30%">
-        <div class="goods-wrap">
-             <div class="item_box" >
-                <img src="../img/samsung/samsung-s9-plus.jpg" alt=""  width="190px" height="189px">
-                <h1 class="item_title">Samsung Galaxy S9+ SM-G965 128GB Black</h1>
-                <p>Preț: <span class="item_price">12 679</span>Lei</p>
-                <button class="add_item" >Pune în coș</button>
-            </div>
+      <div class="clearfix"></div>
+      <hr width="30%">
+      <div class="goods-wrap">
+           <div class="item_box"  data-rating="15">
+              <img src="../img/samsung/samsung-s9-plus.jpg" alt=""  width="190px" height="189px">
+              <h1 class="item_title">Samsung Galaxy S9+ SM-G965 128GB Black</h1>
+              <p>Preț: <span class="item_price">12 679</span>Lei</p>
+              <button class="btnt" data-id="8">Pune în coș</button>
+          </div>
 
-            <div class="item_box" >
-                <img src="../img/apple/iphone-7.jpg" alt="" width="190px" height="189px">
-                <h1 class="item_title">Apple iPhone 7 128Gb Silver</h1>
-                <p>Preț: <span class="item_price">7 499</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
-            </div>
+          <div class="item_box"  data-rating="14">
+              <img src="../img/apple/iphone-7.jpg" alt="" width="190px" height="189px">
+              <h1 class="item_title">Apple iPhone 7 128Gb Silver</h1>
+              <p>Preț: <span class="item_price">7 499</span>Lei</p>
+              <button class="btnt" data-id="1">Pune în coș</button>
+          </div>
 
-             <div class="item_box" >
-                <img src="../img/apple/iphone_11_pro_m.jpg" alt=""  width="190px" height="189px">
-                <h1 class="item_title">APPLE Iphone 11 Pro Max 256GB Gold</h1>
-                <p>25 999 Lei</p>
-                <button class="add_item" >Pune în coș</button>
-            </div>
+           <div class="item_box" data-rating="20">
+              <img src="../img/apple/iphone_11_pro_m.jpg" alt=""  width="190px" height="189px">
+              <h1 class="item_title">APPLE Iphone 11 Pro Max 256GB Gold</h1>
+              <p>25 999 Lei</p>
+              <button class="btnt" data-id="7">Pune în coș</button>
+          </div>
+          
+          <div class="item_box" data-rating="12">
+              <img src="../img/samsung/Samsung-Galaxy-A51(b).jpg" alt="" width="190px" height="189px">
+              <h1 class="item_title">Samsung Galaxy A51 4/64GB, Prism Crush Black</h1>
+             <p>Preț: <span class="item_price">6 359</span>Lei</p>
+              <button class="btnt" data-id="2">Pune în coș</button>
+          </div>
+          
+          <div class="item_box" data-rating="10">
+              <img src="../img/xiaomi/xiaomi-redmi-note-7.jpeg" alt=""width="190px" height="189px">
+              <h1 class="item_title">Xiaomi Redmi Note 7, Black</h1>
+              <p>Preț: <span class="item_price">3 799</span>Lei</p>
+              <button class="btnt" data-id="3">Pune în coș</button>
+          </div>
 
-            <div class="item_box" >
-                <img src="../img/samsung/Samsung-Galaxy-A51(b).jpg" alt="" width="190px" height="189px">
-                <h1 class="item_title">Samsung Galaxy A51 4/64GB, Prism Crush Black</h1>
-               <p>Preț: <span class="item_price">6 359</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
-            </div>
+          <div class="item_box" data-rating="6">
+              <img src="../img/Huawei_honor.jpeg" alt="" width="190px" height="189px">
+              <h1 class="item_title">Huawei Honor 10 Lite 3/64 Sap Blue</h1>
+              <p>Preț: <span class="item_price">4 299</span>Lei</p>
+              <button class="btnt" data-id="4">Pune în coș</button>
+          </div>
 
-            <div class="item_box" >
-                <img src="../img/xiaomi/xiaomi-redmi-note-7.jpeg" alt=""width="190px" height="189px">
-                <h1 class="item_title">Xiaomi Redmi Note 7, Black</h1>
-                <p>Preț: <span class="item_price">3 799</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
-            </div>
+          <div class="item_box" data-rating="5">
+              <img src="../img/p20_lite_blue_64gb.jpg" alt="" width="190px" height="189px">
+              <h1 class="item_title" >HUAWEI P20 Lite Blue 64Gb</h1>
+              <p>Preț: <span class="item_price">3 999</span>Lei</p>
+              <button class="btnt" data-id="5">Pune în coș</button>
+          </div>
 
-            <div class="item_box" >
-                <img src="../img/Huawei_honor.jpeg" alt="" width="190px" height="189px">
-                <h1 class="item_title">Huawei Honor 10 Lite 3/64 Sap Blue</h1>
-                <p>Preț: <span class="item_price">4 299</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
-            </div>
-
-            <div class="item_box" >
-                <img src="../img/p20_lite_blue_64gb.jpg" alt="" width="190px" height="189px">
-                <h1 class="item_title" >HUAWEI P20 Lite Blue 64Gb</h1>
-                <p>Preț: <span class="item_price">3 999</span>Lei</p>
-                <button class="add_item">Pune în coș</button>
-            </div>
-
-            <div class="item_box" >
-                <img src="../img/meizu.jpg" alt="" width="190px" height="189px">
-                <h1 class="item_title">Meizu 16 6/128Gb Black</h1>
-                <p>Preț: <span class="item_price">2 799</span>Lei</p>
-               <button class="add_item">Pune în coș</button>
-            </div>  
+          <div class="item_box" data-rating="3">
+              <img src="../img/meizu.jpg" alt="" width="190px" height="189px">
+              <h1 class="item_title">Meizu 16 6/128Gb Black</h1>
+              <p>Preț: <span class="item_price">2 799</span>Lei</p>
+             <button class="btnt" data-id="6">Pune în coș</button>
+          </div>
         </div>
-        <div class="clearfix"></div>
-    </div>
+      <div class="clearfix"></div>
+  </div>
 </section>
  	<!-- Sfirsit continut pagina -->
 </article> 
@@ -186,5 +185,6 @@
             <p>Copyright © 2022</p>
         </div>
         <script type="text/javascript" src="../javascript/categorii.js"></script>
+        <script type="text/javascript" src="../javascript/smartphone-cards.js"></script>
 </body>
 </html>

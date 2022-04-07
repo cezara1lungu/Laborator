@@ -166,7 +166,6 @@ button:hover {
 }
 
 
-
 /*==================================================================
 [ Form ]*/
 
@@ -187,8 +186,6 @@ button:hover {
   text-align: center;
   padding-bottom: 33px;
 }
-
-
 
 /*-----------------------
 [ Input ]*/
@@ -270,7 +267,6 @@ textarea.input100 {
 .input100:focus + .focus-input100 {
   visibility: visible;
   opacity: 1;
-
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -317,7 +313,6 @@ textarea.input100 {
   background: #333333;
 }
 
-
 /*------------------------------------------------------------------
 [ Alert validate ]*/
 
@@ -345,8 +340,6 @@ textarea.input100 {
 
   visibility: hidden;
   opacity: 0;
-
-  
 }
 
 .alert-validate::after {
