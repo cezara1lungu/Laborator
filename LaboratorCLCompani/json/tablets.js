@@ -1,5 +1,5 @@
 
-    const tablete = [
+const tablete = [
         {
             "name": "iPad Pro 12,9″ 128 Gb",
             "images": [
@@ -8,7 +8,7 @@
             "price": "17 990"
         },
         {
-            "name": "APPLE iPad 10.2 Wi-Fi +Cellular 128GB Gold",
+            "name": "Apple iPad 10.2 Wi-Fi +Cellular 128GB Gold",
             "images": [
                 "../img/ipad/ipad_gold.jpg"
             ],

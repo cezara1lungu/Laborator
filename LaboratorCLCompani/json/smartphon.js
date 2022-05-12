@@ -15,7 +15,7 @@ const smartphones = [
             "price": "7 499"
         },
         {
-            "name": "APPLE Iphone 11 Pro Max 256GB Gold",
+            "name": "Apple Iphone 11 Pro Max 256GB Gold",
             "images": [
                 "../img/apple/iphone_11_pro_m.jpg"
             ],
@@ -43,7 +43,7 @@ const smartphones = [
             "price": "4 299"
         },
         {
-            "name": "HUAWEI P20 Lite Blue 64Gb",
+            "name": "Huawei P20 Lite Blue 64Gb",
             "images": [
                 "../img/p20_lite_blue_64gb.jpg"
             ],
@@ -56,4 +56,9 @@ const smartphones = [
             ],
             "price": "2 799"
         }
-    ];
+]
+smartphones.sort((a,b) => {
+    return a.price - b.price;
+});
+
+console.log(smartphones);

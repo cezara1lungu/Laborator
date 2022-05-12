@@ -55,21 +55,25 @@
             <a href="../pages/tablete.html">Tablete</a>
     </div>
   <div class="util">
-    <div class="categorii"  onclick="openCategorii();" ondblclick="closeCategorii();">
+    <div class="categorii"  onclick="openCategorii(); " ondblclick="closeCategorii();">
       <a >
         <i class="fa fa-bars" style="font-size:30px; width: 10px; color: white;"></i>
-        <a><h3>Categorii</h3></a> </a>
+        <a><h3>Categorii</h3></a> 
+      </a>
     </div>
   <div class="cautare">
-    <form class="example">
-        <input type="text" placeholder="Caută produsul dorit" name="search2">
-          <button type="submit">
+    <div class="example">
+        <input type="text" placeholder="Caută produsul dorit" name="search2" class="domTextElement">
+          <button id="submit"  onclick="openSearch();">
             <i class="fa fa-search"></i>
           </button>
-            </form>
+        </div>
   </div>
+
   <div class="personal">    
-    <a href="../pages/cont.html"><img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; "></a>   
+    <a href="../pages/cont.html">
+      <img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; ">
+    </a>   
     <a href="../pages/cos.html">
       <img src="../img/index_home/shopping-bag.png" width="35px" height="35px">
     </a>
@@ -84,14 +88,14 @@
       <h1>Smartphone-uri</h1>
       <hr width="70%">
 
-      <button id="sort-asc">Preț (mic>mare)</button>
+      <button id="sort-asc" onclick="testjs()">Preț (mic>mare)</button>
       <button id="sort-desc">Preț (mare>mic)</button>
-      <button id="sort-rating">Cele mai populare</button>
 
       <div class="clearfix"></div>
       <hr width="30%">
       <div class="goods-wrap">
-           <div class="item_box"  data-rating="15">
+        <!--
+              <div class="item_box"  data-rating="15">
               <img src="../img/samsung/samsung-s9-plus.jpg" alt=""  width="190px" height="189px">
               <h1 class="item_title">Samsung Galaxy S9+ SM-G965 128GB Black</h1>
               <p>Preț: <span class="item_price">12 679</span>Lei</p>
@@ -146,6 +150,7 @@
               <p>Preț: <span class="item_price">2 799</span>Lei</p>
              <button class="btnt" data-id="6">Pune în coș</button>
           </div>
+          -->
         </div>
       <div class="clearfix"></div>
   </div>
