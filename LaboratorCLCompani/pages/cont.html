@@ -2,10 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cont CL COMPANI</title>
+  <title>Bun venit CL COMPANI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+   <link href='https://css.gg/add.css' rel='stylesheet'>
+   <link href='https://css.gg/calendar-dates.css' rel='stylesheet'>
+   <link href='https://css.gg/facebook.css' rel='stylesheet'>
+   <link href='https://css.gg/instagram.css' rel='stylesheet'>
+   <link href='https://css.gg/add-r.css' rel='stylesheet'>
+   <link href='https://css.gg/user-add.css' rel='stylesheet'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href='https://css.gg/youtube.css' rel='stylesheet'>
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" type="text/css" href="../css/cont.css">
   
@@ -57,7 +68,7 @@
   <div class="util">
     <div class="categorii" onclick="openCategorii();" ondblclick="closeCategorii();">
       <a >
-        <i class="fa fa-bars" style="font-size:30px; width: 10px; color: white;"></i>
+        <i class="fa fa-bars" style=" width: 10px; color: white;"></i>
         <a><h3>Categorii</h3></a> </a>
   </div>
 
@@ -76,18 +87,20 @@
         </a>
     </div>
   </div>
-  
+  <!--
   <div class="container">
-    <form class="form" id="login">
+    <form class="form" id="login" action="../php/action_page.php">
         <h1 class="form__title">Login</h1>
         <div class="form__message form__message--error"></div>
+
         <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder="Username or email">
-            <div class="form__input-error-message"></div>
+            <input type="text" class="form_text form__input" id="form_fname" name="usernameOrEmail" autofocus placeholder="Username or email" required>
+            <span class="error_form" id="fname_error_message"></span>
+            <label id="nume"></label>
         </div>
         <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder="Password">
-            <div class="form__input-error-message"></div>
+            <input type="password" class="form__input" name="password" autofocus placeholder="Password">
+            <span class="error_form" id="fname_error_message"></span>
         </div>
         <button class="form__button" type="submit">Continue</button>
         <p class="form__text">
@@ -101,19 +114,19 @@
         <h1 class="form__title">Create Account</h1>
         <div class="form__message form__message--error"></div>
         <div class="form__input-group">
-            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+            <input type="text" id="signupUsername" class="form__input" name="username" autofocus placeholder="Username">
             <div class="form__input-error-message"></div>
         </div>
         <div class="form__input-group">
-            <input type="text" class="form__input" autofocus placeholder="Email Address">
+            <input type="text" class="form__input" name="email" autofocus placeholder="Email">
             <div class="form__input-error-message"></div>
         </div>
         <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder="Password">
+            <input type="password" class="form__input" name="password" autofocus placeholder="Password">
             <div class="form__input-error-message"></div>
         </div>
         <div class="form__input-group">
-            <input type="password" class="form__input" autofocus placeholder="Confirm password">
+            <input type="password" class="form__input" name="confirmPassword" autofocus placeholder="Confirm password">
             <div class="form__input-error-message"></div>
         </div>
         <button class="form__button" type="submit">Continue</button>
@@ -122,6 +135,110 @@
         </p>
     </form>
 </div>
+-->
+<div class="container">
+  <h1>Înregistrarea Profilului</h1>
+  <form id="registration_form" >
+  <div class="info">
+    <div>
+      <label>&nbsp Nume &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+      <input type="text" class="form_text" id="form_fname" name="form_fnam" ><br>
+      <span class="error_form" id="fname_error_message"></span>
+      <label id="nume"></label>	
+    </div><br>
+    <div>
+      <label>&nbsp Prenume</label>
+      <input type="text" class="form_text" id="form_lname"  name="form_lnam"><br>
+      <span class="error_form" id="lname_error_message"></span>
+      <label id="lname"></label>	
+    </div><br>
+    <div>
+      <label>&nbsp Email</label>
+      <input type="email" class="form_text" id="form_email"  name="form_emai"><br>
+      <span class="error_form" id="email_error_message"></span>
+      <label id="mail"></label>	
+    </div><br>
+    <div>
+      <label>&nbsp Numărul &nbsp&nbsp&nbsp&nbsp</label>
+      <input type="text" class="form_text" id="form_number" name="form_numbe" ><br>
+      <span class="error_form" id="number_error_message"  ></span>
+      <label id="tel"></label>	
+    </div><br>
+          <div>
+      <label>&nbsp Adresa</label>
+      <input type="text" class="form_text" id="form_adress" name="form_adres"><br>
+      <span class="error_form" id="adress_error_message"></span>
+      <label id="adresss"></label>	
+    </div><br>
+          <div>
+      <label>&nbsp Profesia</label>
+      <input type="text" class="form_text" id="form_job" name="form_job" ><br>
+      <span class="error_form" id="job_error_message"></span>
+      <label id="jobs"></label>	
+    </div>
+    </div>
+       
+    <hr>
+    <div id="flip">
+      <h1>Adăugați link-urile la rețelele sociale</h1>
+      <center><i class="gg-add-r button"></i></center>
+    </div>
+
+    <div id="panel" class="left">
+       <h3>Adauga link</h3>
+       <div>
+        &nbsp<input type="url"  id="form_link" >
+          <span class="error_form" id="link_error_message"></span>
+          <td></td>
+          <label id="lin1">
+            facebook
+            <i class="gg-facebook"></i>
+          </label>
+    </div>	
+
+    <div class="left">
+      &nbsp<input type="url" id="form_link1" >
+      <span class="error_form" id="link1_error_message"></span>
+      <label id="lin2">
+        instagram
+        <i class="gg-instagram"></i>  
+      </label>	
+    </div>
+
+    <div class="left">
+      <div class="input_fields_wrap_2">
+      <h3>Suplimentar</h3>
+      <center><i class="gg-add-r add_field_button_2"></i></center>
+    </div>
+
+  </div>
+</div>
+
+  <hr>
+  <div class="left">
+    <div class="input_fields_wrap_1" >
+      <h1>Adaugare date despre Job</h1>
+      <center><i class="gg-add-r add_field_button_1"></i></center>
+      <div id="myhide" ></div>               
+    </div>
+  </div>
+  <hr>
+
+  <div class="left">
+    <h1>Adaugare date despre Studii</h1>
+    <div class="input_fields_wrap">
+      <center><i class="gg-add-r add_field_button"></i></center>
+    </div>        
+  </div>
+
+  <hr>
+  <center><input type="submit" class="sub" value="Submit" ></center>
+</form>
+</div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
 
 
 </article>    

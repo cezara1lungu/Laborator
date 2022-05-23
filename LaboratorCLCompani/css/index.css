@@ -136,6 +136,7 @@ body, html {
   }
   .example{
     width: 60%;
+    height: 40px;
     display: flex;
     flex-direction: row;
   }
