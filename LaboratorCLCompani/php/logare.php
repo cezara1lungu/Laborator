@@ -112,29 +112,17 @@ if(!isset($success)){
             <input type="text" id="email" name="email" placeholder="Email">
             <br>
             <p class="error_form" id="email_error_2"></p>
-       
             <input type="password" id="password" name="password" placeholder="Password">
             <br>
             <br>
         <p class="error_form" id="password_error_message"></p>
         <input type="submit" id="submit" value="Confirm" name="submit">
         <br><br>
-                <?php if(isset($email_error)){ ?>
-                    <p class="php_error"> <?php echo $email_error ?> </p>
-                <?php } ?>
-                <?php if(isset($password_error)){ ?>
-                    <p class="php_error"> <?php echo $password_error ?> </p>
-                <?php } ?>
-
-                <?php if(!isset($email_error) && !isset($password_error) ){ ?>
-                <p class="php_error"> <?php echo $success ?> </p>
-                <?php } ?>
+        <p id="validationText"></p> 
     </form>
 </div>
 </div>
 </div>
-
- 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>

@@ -13,19 +13,14 @@ if(empty($email)){
 if(empty($password)){
     $password_error = '*Completați câmpul password';
 }elseif(strlen($password) < 8){
-    $password_error = 'Parola trebuie să aibă cel puțin 8 caractere';
+    $password_error = 'Parola trebuie să conțina măcar 8 caractere';
 }
 
-$db_data = include('date.php');
-$db_data = $db_data[0];
-
-foreach($db_data as $user) {
-    if($user['email'] === $email) {
-        if($user['password'] === $password) {
-            $_SESSION['email'] = $email;
-        }
-    }
+if($password_error == NULL && $email_error == NULL){
+    $result = "Succes!";
+    echo json_encode($result);
+}else{
+    $result = "Error";
+    echo json_encode($result);
 }
-
-include('page_prin.php');
 ?>
