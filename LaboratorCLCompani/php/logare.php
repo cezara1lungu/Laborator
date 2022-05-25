@@ -1,17 +1,31 @@
+<?php 
+//session_start();
+if(!isset($success)){
+    $success = '';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Client CL COMPANI</title>
+  <title>Bun venit CL COMPANI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-  <link rel="stylesheet" type="text/css" href="../css/client_mesaj.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="../images/icons/favicon.ico"/>
+
+   <link href='https://css.gg/add.css' rel='stylesheet'>
+   <link href='https://css.gg/calendar-dates.css' rel='stylesheet'>
+   <link href='https://css.gg/facebook.css' rel='stylesheet'>
+   <link href='https://css.gg/instagram.css' rel='stylesheet'>
+   <link href='https://css.gg/add-r.css' rel='stylesheet'>
+   <link href='https://css.gg/user-add.css' rel='stylesheet'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href='https://css.gg/youtube.css' rel='stylesheet'>
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" type="text/css" href="../css/util.css">
-  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <link rel="stylesheet" type="text/css" href="../css/cont.css">
+  
 </head>
 <body>
   <div class="home" >
@@ -49,7 +63,7 @@
       <div class="contacte">
         <a href="contacte.html">Contact Vânzări</a>
         <a href="#tel:060996967">0 60 996 967</a>
-      </div>  
+      </div>
   </header> 
 
    <div class="cat_b" id="categorii_b" onclick="openCategorii();" ondblclick="closeCategorii();" >
@@ -60,9 +74,10 @@
   <div class="util">
     <div class="categorii" onclick="openCategorii();" ondblclick="closeCategorii();">
       <a >
-        <i class="fa fa-bars" style="font-size:30px; width: 10px; color: white;"></i>
+        <i class="fa fa-bars" style=" width: 10px; color: white;"></i>
         <a><h3>Categorii</h3></a> </a>
-    </div>
+  </div>
+
   <div class="cautare">
     <form class="example" >
         <input type="text" placeholder="Caută produsul dorit" name="search2">
@@ -71,114 +86,60 @@
           </button>
             </form>
   </div>
-  <div class="personal">    
-    <a href="../php/logare.php">
-      <img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; ">
-    </a> 
-    <a href="../php/inregistrare.php">
-      <img src="../img/index_home/register.png" width="30px" height="30px" style="margin-right:16px; ">
-    </a>    
-    <a href="../pages/cos.html">
-      <img src="../img/index_home/shopping-bag.png" width="35px" height="35px">
-    </a>
-  </div>
-  </div>
-<section>
-  <div class="container-contact100">
-    <div class="wrap-contact100">
-      <form class="contact100-form validate-form">
-        <span class="contact100-form-title">
-          Trimite-ne un mesaj
-        </span>
-
-        <label class="label-input100" for="first-name">Despre Tine</label>
-        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-          <input id="first-name" class="input100" type="text" name="first-name" placeholder="Numele">
-          <span class="focus-input100"></span>
-        </div>
-        <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-          <input class="input100" type="text" name="last-name" placeholder="Prenumele">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="email">Introduceți adresa de email</label>
-        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <input id="email" class="input100" type="email" name="email" placeholder="Ex. exemplu@mail.ru">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="phone">Introduceți numărul de telefon</label>
-        <div class="wrap-input100">
-          <input id="phone" class="input100" type="text" name="phone" placeholder="Ex. +373 67 100 123">
-          <span class="focus-input100"></span>
-        </div>
-
-        <label class="label-input100" for="message">Mesajul dvs.</label>
-        <div class="wrap-input100 validate-input" data-validate = "Message is required">
-          <textarea id="message" class="input100" name="message" placeholder="Scrie-ne un mesaj"></textarea>
-          <span class="focus-input100"></span>
-        </div>
-
-        <div class="container-contact100-form-btn">
-          <button class="contact100-form-btn">
-            Trimite mesaj
-          </button>
-        </div>
-      </form>
-
-      <div class="contact100-more flex-col-c-m" style="background-image: url('../img/images/bg-01.jpg');">
-        <div class="flex-w size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-map-marker"></span>
-          </div>
-
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Adresă
-            </span>
-
-            <span class="txt2">
-              Chișinău, str. Sarmisegetusa 10, Botanica
-            </span>
-          </div>
-        </div>
-
-        <div class="dis-flex size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-phone-handset"></span>
-          </div>
-
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Contactează-ne
-            </span>
-
-            <span class="txt3">
-              +373 67 480 777
-            </span>
-          </div>
-        </div>
-
-        <div class="dis-flex size1 p-b-47">
-          <div class="txt1 p-r-25">
-            <span class="lnr lnr-envelope"></span>
-          </div>
-
-          <div class="flex-col size2">
-            <span class="txt1 p-b-20">
-              Adresați-vă
-            </span>
-
-            <span class="txt3">
-              cezara_lungu@mail.ru
-            </span>
-          </div>
-        </div>
-      </div>
+    <div class="personal">    
+        <a href="logare.php">
+          <img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; ">
+        </a>  
+        <a href="../php/inregistrare.php">
+          <img src="../img/index_home/register.png" width="30px" height="30px" style="margin-right:16px; ">
+        </a>   
+        <a href="../pages/cos.html">
+          <img src="../img/index_home/shopping-bag.png" width="35px" height="35px">
+        </a>
     </div>
   </div>
-</section>
-  
+
+  <div class="content-area content-area-contacts">
+    <div class="contact_us"> 
+    <br>
+    <h1 style="color: white;">Logare</h1>
+
+    <p id="alert_error_message"></p>
+<div class="form_container">
+
+    <form action="log-validation.php" id="form" class="login_form" method="post">
+             <br>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <br>
+            <p class="error_form" id="email_error_2"></p>
+       
+            <input type="password" id="password" name="password" placeholder="Password">
+            <br>
+            <br>
+        <p class="error_form" id="password_error_message"></p>
+        <input type="submit" id="submit" value="Confirm" name="submit">
+        <br><br>
+                <?php if(isset($email_error)){ ?>
+                    <p class="php_error"> <?php echo $email_error ?> </p>
+                <?php } ?>
+                <?php if(isset($password_error)){ ?>
+                    <p class="php_error"> <?php echo $password_error ?> </p>
+                <?php } ?>
+
+                <?php if(!isset($email_error) && !isset($password_error) ){ ?>
+                <p class="php_error"> <?php echo $success ?> </p>
+                <?php } ?>
+    </form>
+</div>
+</div>
+</div>
+
+ 
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
+
+
 </article>    
     <footer>
       <div class="footer">
@@ -207,10 +168,12 @@
           <p><a href="../pages/client_mesaj.html">Contactați-ne</a></p>
         </div>
       </div>
-    </footer>   
-        <div class="copyright">
-            <p>Copyright © 2022</p>
-        </div>
-        <script type="text/javascript" src="../javascript/categorii.js"></script>
+    </footer>     
+    <div class="copyright">
+      <p>Copyright © 2022</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../javascript/cont.js"></script>
+    <script type="text/javascript" src="../javascript/categorii.js"></script>
 </body>
 </html>

@@ -1,4 +1,10 @@
-<!--<!DOCTYPE html>
+<?php 
+//session_start();
+if(!isset($success)){
+    $success = '';
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -81,62 +87,66 @@
             </form>
   </div>
     <div class="personal">    
-        <a href="../pages/cont.html"><img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; "></a>   
+        <a href="logare.php">
+            <img src="../img/index_home/user.png" width="30px" height="30px" style="margin-right:16px; ">
+        </a>   
+        <a href="../php/inregistrare.php">
+          <img src="../img/index_home/register.png" width="30px" height="30px" style="margin-right:16px; ">
+        </a>  
         <a href="../pages/cos.html">
           <img src="../img/index_home/shopping-bag.png" width="35px" height="35px">
         </a>
     </div>
   </div>
 
- 
-  <div class="container">
-    <form class="form" id="login" action="../php/action_page.php">
-        <h1 class="form__title">Login</h1>
-        <div class="form__message form__message--error"></div>
+  <div class="content-area content-area-contacts">
+    <div class="contact_us"> 
+    <br>
+    <h1 style="color: white;">Inregistrare</h1>
+    <br>
 
-        <div class="form__input-group">
-            <input type="text" class="form_text form__input" id="form_fname" name="usernameOrEmail" autofocus placeholder="Username or email" required>
-            <span class="error_form" id="fname_error_message"></span>
-            <label id="nume"></label>
-        </div>
-        <div class="form__input-group">
-            <input type="password" class="form__input" name="password" autofocus placeholder="Password">
-            <span class="error_form" id="fname_error_message"></span>
-        </div>
-        <button class="form__button" type="submit">Continue</button>
-        <p class="form__text">
-            <a href="#" class="form__link">Forgot your password?</a>
-        </p>
-        <p class="form__text">
-            <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
-        </p>
-    </form>
-    <form class="form form--hidden" id="createAccount">
-        <h1 class="form__title">Create Account</h1>
-        <div class="form__message form__message--error"></div>
-        <div class="form__input-group">
-            <input type="text" id="signupUsername" class="form__input" name="username" autofocus placeholder="Username">
-            <div class="form__input-error-message"></div>
-        </div>
-        <div class="form__input-group">
-            <input type="text" class="form__input" name="email" autofocus placeholder="Email">
-            <div class="form__input-error-message"></div>
-        </div>
-        <div class="form__input-group">
-            <input type="password" class="form__input" name="password" autofocus placeholder="Password">
-            <div class="form__input-error-message"></div>
-        </div>
-        <div class="form__input-group">
-            <input type="password" class="form__input" name="confirmPassword" autofocus placeholder="Confirm password">
-            <div class="form__input-error-message"></div>
-        </div>
-        <button class="form__button" type="submit">Continue</button>
-        <p class="form__text">
-            <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
-        </p>
-    </form>
+    <div class="form_container">
+        <form action="inregistrare-validation.php" id="form" method="post">
+            <input type="text" id="fname" name="fname" placeholder="Numele">
+                <br>
+            <p class="error_form" id="fname_error_message"></p>
+            <input type="text" id="sname" name="sname" placeholder="Prenumele">
+                <br>
+            <p class="error_form" id="sname_error_message"></p>
+            <input type="text" id="email" name="email" placeholder="Email">
+                <br>
+            <p class="error_form" id="email_error_message2"></p>
+            <input type="password" id="password_1" name="password_1" placeholder="Password">
+                <br>
+            <p class="error_form" id="password_error_message"></p>
+            <input type="password" id="password_2" name="password_2" placeholder="Confirmă password">
+                <br>
+            <p class="error_form" id="password_error_message2"></p>
+            <input type="submit" id="submit" value="Confirm" name="submit">
+            <br><br>
+            <?php if(isset($fname_error)){ ?>
+                <p class="php_error"> <?php echo $fname_error ?> </p>
+            <?php } ?>
+            <?php if(isset($sname_error)){ ?>
+                <p class="php_error"> <?php echo $sname_error ?> </p>
+            <?php } ?>
+            <?php if(isset($email_error)){ ?>
+                <p class="php_error"> <?php echo $email_error ?> </p>
+            <?php } ?>
+            <?php if(isset($password_error)){ ?>
+                <p class="php_error"> <?php echo $password_error ?> </p>
+            <?php } ?>
+            <?php if(isset($password_error2)){ ?>
+                <p class="php_error"> <?php echo $password_error2 ?> </p>
+            <?php } ?>
+            <?php if(!isset($fname_error) && !isset($semail_error) && !isset($email_error) && !isset($password_error) && !isset($password_error2)){ ?>
+                <p class="php_error"> <?php echo $success ?> </p>
+            <?php } ?>
+        </form>
+    </div>
 </div>
 
+<!--
 <div class="container">
   <h1>Înregistrarea Profilului</h1>
   <form id="registration_form" >
@@ -216,6 +226,7 @@
   <center><input type="submit" class="sub" value="Submit" ></center>
 </form>
 </div>
+-->
 </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
@@ -254,8 +265,9 @@
     <div class="copyright">
       <p>Copyright © 2022</p>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="../javascript/cont.js"></script>
+    <script src="../javascript/inregistrare-validation.js"></script>
     <script type="text/javascript" src="../javascript/categorii.js"></script>
 </body>
 </html>
--->
